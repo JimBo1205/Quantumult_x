@@ -7,7 +7,7 @@ const signbodyKey = 'chavy_signbody_meituan'
 const chavy = init()
 
 const requrl = $request.url
-if ($request && $request.method != 'OPTIONS' && requrl.match(/\/evolve\/signin\//)) {
+if ($request && $request.method != 'OPTIONS' && requrl.match(/\/evolve\/signin/)) {
   const signurlVal = requrl
   const signheaderVal = JSON.stringify($request.headers)
   const signbodyVal = $request.body
